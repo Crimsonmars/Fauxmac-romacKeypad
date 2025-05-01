@@ -66,16 +66,16 @@ macros {
 
         keypad {
 // --------------------------
-// | 7      |  8  |  9      |
+// | M_PLAY |  8  |  TOGGLE |
+// | 1      |  2  | 3       |
 // | 4      |  5  |  6      |
-// | 1      |  2  |  3      |
-// | M_PLAY |  0  |  TOGGLE |
+// | 7      |  8  |  9      |
 // --------------------------
             bindings = <
-    &kp N7       &kp N8     &kp N9
-    &kp N4       &kp N5     &kp N6
+    &kp kp C_PP       &kp N0     &to 0
     &kp N1       &kp N2     &kp N3
-    &kp C_PP     &kp N0     &to 0 
+    &kp N4       &kp N5     &kp N6
+    &kp N7     &kp N8     &kp N9 
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
